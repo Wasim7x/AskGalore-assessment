@@ -1,0 +1,106 @@
+[
+  {
+    "account_code": "1150",
+    "account_name": "Other Current Assets",
+    "decision": "propose",
+    "reason": "confidence 1.00 \u2265 0.6 with warnings",
+    "proposed_code": "1150",
+    "proposed_name": "Other Current Assets",
+    "confidence": 1.0,
+    "rationale": "Exact COA code match on the TB row \u2014 no inference needed.",
+    "alternatives": [],
+    "findings": [
+      {
+        "code": "AMBIGUOUS_CF_CATEGORY",
+        "severity": "warn",
+        "message": "COA node 1150 has cf_category=TBD; Cash Flow Statement generation will be ambiguous until this is set."
+      }
+    ],
+    "source_csv_rows": [
+      10
+    ]
+  },
+  {
+    "account_code": "2170",
+    "account_name": "Intercompany Payable",
+    "decision": "propose",
+    "reason": "confidence 1.00 \u2265 0.6 with warnings",
+    "proposed_code": "2170",
+    "proposed_name": "Intercompany Payable",
+    "confidence": 1.0,
+    "rationale": "Exact COA code match on the TB row \u2014 no inference needed.",
+    "alternatives": [],
+    "findings": [
+      {
+        "code": "AMBIGUOUS_CF_CATEGORY",
+        "severity": "warn",
+        "message": "COA node 2170 has cf_category=TBD; Cash Flow Statement generation will be ambiguous until this is set."
+      }
+    ],
+    "source_csv_rows": [
+      24
+    ]
+  },
+  {
+    "account_code": "7310",
+    "account_name": "FX Gain/Loss - Unrealized",
+    "decision": "propose",
+    "reason": "confidence 1.00 \u2265 0.6 with warnings",
+    "proposed_code": "7310",
+    "proposed_name": "FX Gain/Loss - Unrealized",
+    "confidence": 1.0,
+    "rationale": "Exact COA code match on the TB row \u2014 no inference needed.",
+    "alternatives": [],
+    "findings": [
+      {
+        "code": "NORMAL_BALANCE_MISMATCH",
+        "severity": "warn",
+        "message": "TB row is net Credit but proposed 7310 has normal_balance=Debit. Could be a contra-account; please confirm."
+      }
+    ],
+    "source_csv_rows": [
+      59
+    ]
+  },
+  {
+    "account_code": "7400",
+    "account_name": "Gain/Loss on Disposal of Assets",
+    "decision": "propose",
+    "reason": "confidence 1.00 \u2265 0.6 with warnings",
+    "proposed_code": "7400",
+    "proposed_name": "Gain/Loss on Disposal of Assets",
+    "confidence": 1.0,
+    "rationale": "Exact COA code match on the TB row \u2014 no inference needed.",
+    "alternatives": [],
+    "findings": [
+      {
+        "code": "NORMAL_BALANCE_MISMATCH",
+        "severity": "warn",
+        "message": "TB row is net Credit but proposed 7400 has normal_balance=Debit. Could be a contra-account; please confirm."
+      }
+    ],
+    "source_csv_rows": [
+      60
+    ]
+  },
+  {
+    "account_code": "9999",
+    "account_name": "Suspense - Unmapped",
+    "decision": "escalate",
+    "reason": "confidence 0.27 below 0.6",
+    "proposed_code": "6200",
+    "proposed_name": "Rent Expense",
+    "confidence": 0.2693,
+    "rationale": "Heuristic fallback (no LLM): nearest COA node by TF-IDF is 6200 'Rent Expense' (sim=0.27); normal_balance match: True.",
+    "alternatives": [
+      "8200",
+      "6600",
+      "8000",
+      "8100"
+    ],
+    "findings": [],
+    "source_csv_rows": [
+      63
+    ]
+  }
+]
