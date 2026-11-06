@@ -1,0 +1,8 @@
+currency,rate_type,rate,period
+EUR,period_average,1.082,2024-Q4
+EUR,period_end,1.095,2024-Q4
+GBP,period_average,1.264,2024-Q4
+USD,period_average,1.0,2024-Q4
+USD,period_end,1.0,2024-Q4
+EUR,opening,1.071,2024-Q4
+GBP,opening,1.251,2024-Q4

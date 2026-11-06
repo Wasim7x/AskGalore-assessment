@@ -1,0 +1,63 @@
+account_code,account_name,currency,debit,credit
+1110,Cash and Cash Equivalents,USD,4250000.00,0.00
+1110,Cash and Cash Equivalents,EUR,825400.00,0.00
+1110,Cash and Cash Equivalents,GBP,412300.00,0.00
+1120,Accounts Receivable,USD,6180500.00,0.00
+1121,Allowance for Doubtful Accounts,USD,0.00,185000.00
+1130,Inventory - Raw Materials,USD,1920000.00,0.00
+1131,Inventory - Finished Goods,USD,3410000.00,0.00
+1140,Prepaid Expenses,USD,245000.00,0.00
+1150,Other Current Assets,USD,78400.00,0.00
+1210,"Property, Plant & Equipment - Cost",USD,17007700.00,0.00
+1211,Accumulated Depreciation - PPE,USD,0.00,4200000.00
+1220,Intangible Assets - Cost,USD,2800000.00,0.00
+1221,Accumulated Amortization,USD,0.00,980000.00
+1230,Goodwill,USD,3500000.00,0.00
+1240,Long-term Investments,USD,750000.00,0.00
+1250,Deferred Tax Asset,USD,320000.00,0.00
+2110,Accounts Payable,USD,0.00,2840000.00
+2120,Accrued Expenses,USD,0.00,1150000.00
+2130,Short-term Debt,USD,0.00,1500000.00
+2140,Current Portion of Long-term Debt,USD,0.00,800000.00
+2150,Income Tax Payable,USD,0.00,420000.00
+2160,Deferred Revenue,USD,0.00,680000.00
+2170,Intercompany Payable,USD,0.00,1240000.00
+2210,Long-term Debt,USD,0.00,6500000.00
+2220,Lease Liability - Long-term,USD,0.00,1320000.00
+2230,Deferred Tax Liability,USD,0.00,485000.00
+2240,Pension Obligations,USD,0.00,910000.00
+3100,Common Stock,USD,0.00,1000000.00
+3110,Additional Paid-in Capital,USD,0.00,4500000.00
+3200,Retained Earnings,USD,0.00,7240000.00
+3310,FX Translation Reserve,USD,0.00,180000.00
+3400,Treasury Stock,USD,420000.00,0.00
+4100,Product Revenue,USD,0.00,28500000.00
+4110,Service Revenue,USD,0.00,6200000.00
+4200,Sales Returns and Allowances,USD,340000.00,0.00
+4300,Other Operating Revenue,USD,0.00,125000.00
+5100,COGS - Materials,USD,9800000.00,0.00
+5110,COGS - Direct Labor,USD,4200000.00,0.00
+5120,COGS - Manufacturing Overhead,USD,2650000.00,0.00
+6100,Salaries and Wages,USD,5400000.00,0.00
+6110,Employee Benefits,USD,920000.00,0.00
+6120,Payroll Taxes,USD,410000.00,0.00
+6200,Rent Expense,USD,480000.00,0.00
+6210,Utilities,USD,115000.00,0.00
+6220,Office Supplies,USD,62000.00,0.00
+6300,Marketing and Advertising,USD,980000.00,0.00
+6310,Travel and Entertainment,USD,245000.00,0.00
+6310,Travel and Entertainment,USD,38500.00,0.00
+6400,Professional Fees,USD,520000.00,0.00
+6410,Insurance,USD,180000.00,0.00
+6500,Depreciation Expense,USD,850000.00,0.00
+6510,Amortization Expense,USD,220000.00,0.00
+6600,Bad Debt Expense,USD,95000.00,0.00
+6900,Other Operating Expenses,USD,140000.00,0.00
+7100,Interest Income,USD,0.00,62000.00
+7200,Interest Expense,USD,410000.00,0.00
+7300,FX Gain/Loss - Realized,USD,85000.00,0.00
+7310,FX Gain/Loss - Unrealized,USD,0.00,42000.00
+7400,Gain/Loss on Disposal of Assets,USD,0.00,18000.00
+8100,Current Tax Expense,USD,680000.00,0.00
+8200,Deferred Tax Expense,USD,120000.00,0.00
+9999,Suspense - Unmapped,USD,12400.00,0.00

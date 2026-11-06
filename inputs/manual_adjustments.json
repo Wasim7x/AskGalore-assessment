@@ -1,0 +1,206 @@
+{
+  "period": "2024-Q4",
+  "functional_currency": "USD",
+  "entries": [
+    {
+      "id": "JE-001",
+      "description": "Accrue Q4 bonus pool",
+      "date": "2024-12-31",
+      "source": "Finance team \u2014 bonus accrual workbook v3",
+      "lines": [
+        {
+          "account": "6100",
+          "debit": 850000.0,
+          "credit": 0.0,
+          "memo": "Bonus accrual"
+        },
+        {
+          "account": "2120",
+          "debit": 0.0,
+          "credit": 850000.0,
+          "memo": "Accrual offset"
+        }
+      ]
+    },
+    {
+      "id": "JE-002",
+      "description": "Reclassify marketing spend wrongly booked to T&E",
+      "date": "2024-12-28",
+      "source": "Controller note 2024-12-28",
+      "lines": [
+        {
+          "account": "6300",
+          "debit": 28500.0,
+          "credit": 0.0,
+          "memo": "Move from T&E"
+        },
+        {
+          "account": "6310",
+          "debit": 0.0,
+          "credit": 25000.0,
+          "memo": "Reverse from T&E"
+        }
+      ]
+    },
+    {
+      "id": "JE-003",
+      "description": "FX revaluation of EUR cash balance to period-end rate",
+      "date": "2024-12-31",
+      "source": "FX reval calc",
+      "lines": [
+        {
+          "account": "1110",
+          "debit": 11200.0,
+          "credit": 0.0,
+          "memo": "EUR cash uplift"
+        },
+        {
+          "account": "7310",
+          "debit": 0.0,
+          "credit": 11200.0,
+          "memo": "Unrealized FX gain"
+        }
+      ]
+    },
+    {
+      "id": "JE-004",
+      "description": "Bad debt provision top-up",
+      "date": "2024-12-31",
+      "source": "AR aging review",
+      "lines": [
+        {
+          "account": "6600",
+          "debit": 45000.0,
+          "credit": 0.0,
+          "memo": "Top-up reserve"
+        },
+        {
+          "account": "1121",
+          "debit": 0.0,
+          "credit": 45000.0,
+          "memo": "Increase allowance"
+        }
+      ]
+    },
+    {
+      "id": "JE-005",
+      "description": "Reclass conference travel from old code",
+      "date": "2024-12-15",
+      "source": "AP team",
+      "lines": [
+        {
+          "account": "6315",
+          "debit": 18500.0,
+          "credit": 0.0,
+          "memo": "Conf travel"
+        },
+        {
+          "account": "6310",
+          "debit": 0.0,
+          "credit": 18500.0,
+          "memo": "Out of T&E"
+        }
+      ]
+    },
+    {
+      "id": "JE-006",
+      "description": "Depreciation catch-up \u2014 Q4",
+      "date": "2024-12-31",
+      "source": "Fixed asset register",
+      "lines": [
+        {
+          "account": "6500",
+          "debit": 215000.0,
+          "credit": 0.0,
+          "memo": "Q4 dep"
+        },
+        {
+          "account": "1211",
+          "debit": 0.0,
+          "credit": 215000.0,
+          "memo": "Accum dep"
+        }
+      ]
+    },
+    {
+      "id": "JE-007",
+      "description": "Deferred tax true-up",
+      "date": "2024-12-31",
+      "source": "Tax provision memo",
+      "lines": [
+        {
+          "account": "8200",
+          "debit": 38000.0,
+          "credit": 0.0,
+          "memo": "DTA reduction"
+        },
+        {
+          "account": "1250",
+          "debit": 0.0,
+          "credit": 38000.0,
+          "memo": "Reduce DTA"
+        }
+      ]
+    },
+    {
+      "id": "JE-008",
+      "description": "Intercompany settlement \u2014 UK sub",
+      "date": "2024-12-30",
+      "source": "IC reconciliation",
+      "lines": [
+        {
+          "account": "2170",
+          "debit": 320000.0,
+          "credit": 0.0,
+          "memo": "IC payable down"
+        },
+        {
+          "account": "2170",
+          "debit": 0.0,
+          "credit": 320000.0,
+          "memo": "IC payable up"
+        }
+      ]
+    },
+    {
+      "id": "JE-009",
+      "description": "Accrue legal fees for ongoing litigation",
+      "date": "2024-12-31",
+      "source": "Legal memo dated 2024-12-29",
+      "lines": [
+        {
+          "account": "6400",
+          "debit": 75000.0,
+          "credit": 0.0,
+          "memo": "Legal accrual"
+        },
+        {
+          "account": "2120",
+          "debit": 0.0,
+          "credit": 75000.0,
+          "memo": "Accrued legal"
+        }
+      ]
+    },
+    {
+      "id": "JE-010",
+      "description": "Reclass long-term debt current portion",
+      "date": "2024-12-31",
+      "source": "Treasury schedule",
+      "lines": [
+        {
+          "account": "2210",
+          "debit": 200000.0,
+          "credit": 0.0,
+          "memo": "Out of LT debt"
+        },
+        {
+          "account": "2140",
+          "debit": 0.0,
+          "credit": 200000.0,
+          "memo": "Into current"
+        }
+      ]
+    }
+  ]
+}

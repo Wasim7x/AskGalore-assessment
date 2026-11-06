@@ -1,0 +1,34 @@
+account_code,account_name,currency,debit,credit
+1110,Cash and Cash Equivalents,USD,3980000.00,0.00
+1110,Cash and Cash Equivalents,EUR,710200.00,0.00
+1110,Cash and Cash Equivalents,GBP,385600.00,0.00
+1120,Accounts Receivable,USD,5420000.00,0.00
+1121,Allowance for Doubtful Accounts,USD,0.00,155000.00
+1130,Inventory - Raw Materials,USD,1750000.00,0.00
+1131,Inventory - Finished Goods,USD,3120000.00,0.00
+1140,Prepaid Expenses,USD,210000.00,0.00
+1150,Other Current Assets,USD,65000.00,0.00
+1210,"Property, Plant & Equipment - Cost",USD,11800000.00,0.00
+1211,Accumulated Depreciation - PPE,USD,0.00,3350000.00
+1220,Intangible Assets - Cost,USD,2800000.00,0.00
+1221,Accumulated Amortization,USD,0.00,760000.00
+1230,Goodwill,USD,3500000.00,0.00
+1240,Long-term Investments,USD,600000.00,0.00
+1250,Deferred Tax Asset,USD,285000.00,0.00
+2110,Accounts Payable,USD,0.00,2410000.00
+2120,Accrued Expenses,USD,0.00,1020000.00
+2130,Short-term Debt,USD,0.00,1200000.00
+2140,Current Portion of Long-term Debt,USD,0.00,800000.00
+2150,Income Tax Payable,USD,0.00,315000.00
+2160,Deferred Revenue,USD,0.00,540000.00
+2170,Intercompany Payable,USD,0.00,980000.00
+2210,Long-term Debt,USD,0.00,7300000.00
+2220,Lease Liability - Long-term,USD,0.00,1410000.00
+2230,Deferred Tax Liability,USD,0.00,460000.00
+2240,Pension Obligations,USD,0.00,870000.00
+3100,Common Stock,USD,0.00,1000000.00
+3110,Additional Paid-in Capital,USD,0.00,4500000.00
+3200,Retained Earnings,USD,0.00,5180000.00
+3310,FX Translation Reserve,USD,0.00,95000.00
+3400,Treasury Stock,USD,420000.00,0.00
+6905,Sundry Operating Expenses,USD,132000.00,0.00

@@ -1,0 +1,73 @@
+account_code,account_name,account_type,parent_code,statement,cf_category,normal_balance
+1000,Total Assets,Header,,BS,,Debit
+1100,Current Assets,Header,1000,BS,,Debit
+1110,Cash and Cash Equivalents,Asset,1100,BS,Cash,Debit
+1120,Accounts Receivable,Asset,1100,BS,Operating,Debit
+1121,Allowance for Doubtful Accounts,Asset,1100,BS,Operating,Credit
+1130,Inventory - Raw Materials,Asset,1100,BS,Operating,Debit
+1131,Inventory - Finished Goods,Asset,1100,BS,Operating,Debit
+1140,Prepaid Expenses,Asset,1100,BS,Operating,Debit
+1150,Other Current Assets,Asset,1100,BS,TBD,Debit
+1200,Non-Current Assets,Header,1000,BS,,Debit
+1210,"Property, Plant & Equipment - Cost",Asset,1200,BS,Investing,Debit
+1211,Accumulated Depreciation - PPE,Asset,1200,BS,Investing,Credit
+1220,Intangible Assets - Cost,Asset,1200,BS,Investing,Debit
+1221,Accumulated Amortization,Asset,1200,BS,Investing,Credit
+1230,Goodwill,Asset,1200,BS,Investing,Debit
+1240,Long-term Investments,Asset,1200,BS,Investing,Debit
+1250,Deferred Tax Asset,Asset,1200,BS,Operating,Debit
+1290,Other Assets,Header,1200,BS,,Debit
+2000,Total Liabilities,Header,,BS,,Credit
+2100,Current Liabilities,Header,2000,BS,,Credit
+2110,Accounts Payable,Liability,2100,BS,Operating,Credit
+2120,Accrued Expenses,Liability,2100,BS,Operating,Credit
+2130,Short-term Debt,Liability,2100,BS,Financing,Credit
+2140,Current Portion of Long-term Debt,Liability,2100,BS,Financing,Credit
+2150,Income Tax Payable,Liability,2100,BS,Operating,Credit
+2160,Deferred Revenue,Liability,2100,BS,Operating,Credit
+2170,Intercompany Payable,Liability,2100,BS,TBD,Credit
+2200,Non-Current Liabilities,Header,2000,BS,,Credit
+2210,Long-term Debt,Liability,2200,BS,Financing,Credit
+2220,Lease Liability - Long-term,Liability,2200,BS,Financing,Credit
+2230,Deferred Tax Liability,Liability,2200,BS,Operating,Credit
+2240,Pension Obligations,Liability,2200,BS,Operating,Credit
+3000,Total Equity,Header,,BS,,Credit
+3100,Common Stock,Equity,3000,BS,Financing,Credit
+3110,Additional Paid-in Capital,Equity,3000,BS,Financing,Credit
+3200,Retained Earnings,Equity,3000,BS,,Credit
+3300,Accumulated OCI,Equity,3000,BS,,Credit
+3310,FX Translation Reserve,Equity,3300,BS,,Credit
+3400,Treasury Stock,Equity,3000,BS,Financing,Debit
+4000,Total Revenue,Header,,PL,,Credit
+4100,Product Revenue,Revenue,4000,PL,,Credit
+4110,Service Revenue,Revenue,4000,PL,,Credit
+4200,Sales Returns and Allowances,Revenue,4000,PL,,Debit
+4300,Other Operating Revenue,Revenue,4000,PL,,Credit
+5000,Cost of Goods Sold,Header,,PL,,Debit
+5100,COGS - Materials,Expense,5000,PL,,Debit
+5110,COGS - Direct Labor,Expense,5000,PL,,Debit
+5120,COGS - Manufacturing Overhead,Expense,5000,PL,,Debit
+6000,Operating Expenses,Header,,PL,,Debit
+6100,Salaries and Wages,Expense,6000,PL,,Debit
+6110,Employee Benefits,Expense,6000,PL,,Debit
+6120,Payroll Taxes,Expense,6000,PL,,Debit
+6200,Rent Expense,Expense,6000,PL,,Debit
+6210,Utilities,Expense,6000,PL,,Debit
+6220,Office Supplies,Expense,6000,PL,,Debit
+6300,Marketing and Advertising,Expense,6000,PL,,Debit
+6310,Travel and Entertainment,Expense,6000,PL,,Debit
+6400,Professional Fees,Expense,6000,PL,,Debit
+6410,Insurance,Expense,6000,PL,,Debit
+6500,Depreciation Expense,Expense,6000,PL,Operating,Debit
+6510,Amortization Expense,Expense,6000,PL,Operating,Debit
+6600,Bad Debt Expense,Expense,6000,PL,Operating,Debit
+6900,Other Operating Expenses,Expense,6000,PL,,Debit
+7000,Non-Operating Items,Header,,PL,,
+7100,Interest Income,Revenue,7000,PL,,Credit
+7200,Interest Expense,Expense,7000,PL,,Debit
+7300,FX Gain/Loss - Realized,Expense,7000,PL,Operating,Debit
+7310,FX Gain/Loss - Unrealized,Expense,7000,PL,Operating,Debit
+7400,Gain/Loss on Disposal of Assets,Expense,7000,PL,Investing,Debit
+8000,Income Tax Expense,Expense,,PL,,Debit
+8100,Current Tax Expense,Expense,8000,PL,Operating,Debit
+8200,Deferred Tax Expense,Expense,8000,PL,Operating,Debit
