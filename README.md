@@ -47,14 +47,25 @@ Python 3.10+ recommended. On Windows PowerShell, set `PYTHONIOENCODING=utf-8` be
 python -m src.cli --no-llm
 ```
 
-**With Claude:**
+**With an LLM provider:**
+
+Copy `.env.example` → `.env`, set `MODEL_PROVIDER` to one of `anthropic | openai | groq | gemini | ollama`, and fill in the matching key. Then:
 
 ```bash
-export ANTHROPIC_API_KEY=sk-...
 python -m src.cli
 ```
 
-Alternative model via env: `CLAUDE_MODEL=claude-sonnet-5-5 python -m src.cli`.
+Per-command override (bypasses `.env`):
+
+```bash
+MODEL_PROVIDER=groq      python -m src.cli
+MODEL_PROVIDER=openai    python -m src.cli
+MODEL_PROVIDER=gemini    python -m src.cli
+MODEL_PROVIDER=ollama    python -m src.cli   # requires `ollama serve` running
+MODEL_PROVIDER=anthropic python -m src.cli
+```
+
+If the chosen provider is unreachable (missing key, no network, bad model id) the pipeline degrades to the heuristic and records the provider's error in each affected rationale — so the audit log always shows what was attempted.
 
 ## What the run produces
 

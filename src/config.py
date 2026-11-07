@@ -1,13 +1,25 @@
-"""Thresholds, paths, and model configuration for the TB -> COA mapper."""
+"""Thresholds, paths, and model/provider configuration for the TB -> COA mapper.
+
+Settings are read from the environment. If a `.env` file exists at the project
+root it is loaded first (python-dotenv). The provider abstraction lives in
+src/providers.py; this module just surfaces the two values that decide which
+provider+model the mapper will try.
+"""
 from __future__ import annotations
 
 import os
 from dataclasses import dataclass
 from pathlib import Path
 
+from dotenv import load_dotenv
+
+
 ROOT = Path(__file__).resolve().parent.parent
 INPUTS = ROOT / "inputs"
 OUTPUT = ROOT / "output"
+
+# Load .env once, as early as possible. Values already in the process env win.
+load_dotenv(ROOT / ".env", override=False)
 
 TB_PATH = INPUTS / "trial_balance.csv"
 COA_PATH = INPUTS / "chart_of_accounts.csv"
@@ -27,9 +39,14 @@ class Thresholds:
 
 @dataclass(frozen=True)
 class ModelConfig:
-    # Claude is used only for the ambiguous slice. Default to a fast model;
-    # the pipeline also runs fully offline via the retrieve-only fallback.
-    model_id: str = os.environ.get("CLAUDE_MODEL", "claude-haiku-5-5")
+    """Provider + model id the mapper will use when an LLM path is taken.
+
+    `provider` picks the client; `model_id` is optional — each provider has a
+    sensible default (see providers.DEFAULT_MODELS). The resolved model id is
+    computed lazily inside the provider so the user can override just one.
+    """
+    provider: str = os.environ.get("MODEL_PROVIDER", "anthropic").strip().lower()
+    model_id: str = os.environ.get("MODEL_NAME", "").strip()
     max_tokens: int = 1024
     temperature: float = 0.0  # mapping decisions should be reproducible
 

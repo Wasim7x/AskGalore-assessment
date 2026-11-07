@@ -91,33 +91,25 @@ def test_retriever_finds_rent_as_nearest_for_bad_query():
 
 
 def test_llm_guardrail_rejects_hallucinated_code(monkeypatch):
-    """If the LLM returns a code outside the candidate list, the mapper must refuse."""
+    """If the provider returns a code outside the candidate list, the mapper must refuse.
+
+    We stub the provider factory directly — this isolates the test from any
+    particular vendor SDK (anthropic, openai, groq, gemini, ollama).
+    """
     from src import mapper as m
 
-    class _Block:
-        type = "tool_use"
-        name = "propose_mapping"
-        input = {
-            "chosen_code": "DOES_NOT_EXIST",
-            "confidence": 0.99,
-            "rationale": "fabricated",
-            "alternatives": [],
-        }
+    class _FakeProvider:
+        name = "fake"
+        model_id = "fake-model"
+        def propose(self, system_prompt, user_prompt, tool_schema):
+            return {
+                "chosen_code":  "DOES_NOT_EXIST",
+                "confidence":   0.99,
+                "rationale":    "fabricated",
+                "alternatives": [],
+            }
 
-    class _Resp:
-        content = [_Block()]
-
-    class _Fake:
-        def __init__(self, *a, **kw): pass
-        class messages:
-            @staticmethod
-            def create(**kw): return _Resp()
-
-    monkeypatch.setenv("ANTHROPIC_API_KEY", "test")
-    monkeypatch.setattr(
-        "anthropic.Anthropic",
-        lambda *a, **kw: type("C", (), {"messages": _Fake.messages})()
-    )
+    monkeypatch.setattr(m, "get_provider", lambda *a, **kw: _FakeProvider())
 
     row = TBRow("X", "mystery", "USD", 1.0, 0.0, source_rows=[1])
     from src.retrieve import Candidate

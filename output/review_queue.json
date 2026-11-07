@@ -91,7 +91,7 @@
     "proposed_code": "6200",
     "proposed_name": "Rent Expense",
     "confidence": 0.2693,
-    "rationale": "Heuristic fallback (no LLM): nearest COA node by TF-IDF is 6200 'Rent Expense' (sim=0.27); normal_balance match: True.",
+    "rationale": "groq unavailable (GROQ_API_KEY is not set.); Heuristic fallback (no LLM): nearest COA node by TF-IDF is 6200 'Rent Expense' (sim=0.27); normal_balance match: True.",
     "alternatives": [
       "8200",
       "6600",
