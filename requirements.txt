@@ -2,6 +2,7 @@ pandas>=2.0
 scikit-learn>=1.3
 rich>=13.0
 python-dotenv>=1.0
+streamlit>=1.36
 
 # LLM provider SDKs. Only the one matching MODEL_PROVIDER in .env
 # is actually exercised at run time; the others sit idle.

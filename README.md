@@ -67,6 +67,19 @@ MODEL_PROVIDER=anthropic python -m src.cli
 
 If the chosen provider is unreachable (missing key, no network, bad model id) the pipeline degrades to the heuristic and records the provider's error in each affected rationale — so the audit log always shows what was attempted.
 
+**Web UI (Streamlit):**
+
+```bash
+streamlit run src/webapp.py
+```
+
+Opens a local app (default `http://localhost:8501`) with:
+- a sidebar for provider / model / API key (overrides `.env` for the session only, nothing is persisted)
+- uploaders for your own `trial_balance.csv` and `chart_of_accounts.csv`, or a checkbox to use the bundled messy inputs
+- live pre-flight triage + decision summary after each run
+- download buttons for `mappings.json`, `review_queue.json`, `audit_log.jsonl`
+- collapsible previews of each artifact
+
 ## What the run produces
 
 Three artifacts in `output/`:
